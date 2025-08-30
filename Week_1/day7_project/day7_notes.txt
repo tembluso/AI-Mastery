@@ -1,0 +1,37 @@
+
+This is the data preprocessing pipeline.
+-Why? Because raw Titanic data has problems: missing ages, categories like “sex” that are text, etc. Models need clean numeric input.
+
+-For numeric features (age, fare):
+
+-SimpleImputer(strategy="median") → if there's a missing value, replace it with the median.
+
+-For categorical features (sex, pclass, alone):
+
+-First: SimpleImputer(strategy="most_frequent") → if missing, replace with the most common value.
+
+-Then: OneHotEncoder(handle_unknown="ignore") → turn categories into numbers (e.g. male → [1,0], female → [0,1]).
+
+-So preprocess = instructions for how to clean + transform data.
+
+
+What is a pipeline?
+
+-A Pipeline glues everything together into one object.
+
+-Steps:
+
+-When you call .fit(X_train, y_train):
+
+-First it runs preprocess on your training data (fills missing values, encodes categories).
+
+-Then it trains the logistic regression model (clf) on the transformed data.
+
+-When you call .predict(X_test):
+
+-It runs the same preprocessing on the test set.
+
+-Then uses the trained model to make predictions.
+
+-👉 Why it’s great: you don’t need to remember to manually preprocess new data later — the Pipeline remembers everything.
+

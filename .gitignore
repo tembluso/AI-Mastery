@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+*.egg
+*.manifest
+*.spec
+
+# Virtual environments
+venv/
+.env/
+.venv/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Data files (optional: ignore large local datasets)
+*.csv
+*.tsv
+*.xlsx
+*.json
+
+# macOS & Windows junk
+.DS_Store
+Thumbs.db
+
+# Old/backup folders
+.week 1 viejo/
+
+# Model files (optional — if you don’t want to push trained pipelines)
+*.joblib
+*.pkl
