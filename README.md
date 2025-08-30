@@ -10,16 +10,27 @@ Each week has 6 days of learning (notebooks) + 1 final project (Day 7).
 ## 📂 Repository Structure
 
 AI-Mastery/
+
 ├─ Week1/
+
 │  ├─ Day1.ipynb
+
 │  ├─ Day2.ipynb
+
 │  ├─ Day6.ipynb
+
 │  └─ Day7-Project/
+
 │     ├─ train_and_save.py
+
 │     ├─ app.py
+
 │     └─ README.md   (optional, explains this project)
+
 ├─ Week2/
+
 │  └─ Day1.ipynb
+
 └─ Week20/
 
 
