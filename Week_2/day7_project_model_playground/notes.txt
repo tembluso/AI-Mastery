@@ -1,0 +1,13 @@
+Scaling = rescaling features to a similar range.
+
+Needed for models where feature magnitude affects training (like linear regression).
+
+Not needed for trees (like Random Forest or Gradient Boosting).
+
+"""
+Prepares transformations before fitting models.
+
+All columns are numeric, so you only scale them (important for linear regression).
+
+Tree models don't need scaling, so you'll override this later with passthrough.
+"""
