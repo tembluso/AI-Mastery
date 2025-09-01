@@ -37,7 +37,16 @@ AI-Mastery/
   Logistic Regression model trained on the Titanic dataset, wrapped in a Streamlit web app.  
   - Preprocessing pipeline with `scikit-learn`  
   - Logistic Regression classifier  
-  - Streamlit app for interactive predictions  
+  - Streamlit app for interactive predictions 
+
+- **Week 2 Project — Titanic Survival Predictor** 
+  An interactive **Streamlit app** to compare machine learning models on the California Housing dataset.  
+  - Train & evaluate models with adjustable hyperparameters.
+  - See test metrics: **R²** and **RMSE**.
+  - Inspect **feature importances** (trees) or **coefficients** (linear regression).
+  - Side-by-side **model comparison**.
+  - Make **custom predictions** with input values.
+  - Visualize **learning curves** to diagnose underfitting/overfitting.
 
 ---
 
