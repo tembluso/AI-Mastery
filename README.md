@@ -68,9 +68,9 @@ AI-Mastery/
 - **Week 5 Project — Model Playground — California Housing** 
   This is the mini-project app for drawing a digit and getting a prediction using a simple PyTorch MLP.
   - Drawable canvas (280×280) with adjustable stroke width and color.
- - Preprocessing to 28×28 grayscale (MNIST format) with inversion and normalization.
- - PyTorch MLP (256→128) with ReLU, trained with Adam.
- - Top-3 probability display and visualization of the processed input.
+  - Preprocessing to 28×28 grayscale (MNIST format) with inversion and normalization.
+  - PyTorch MLP (256→128) with ReLU, trained with Adam.
+  - Top-3 probability display and visualization of the processed input.
 
 
 ---
