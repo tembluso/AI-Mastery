@@ -33,3 +33,5 @@ Thumbs.db
 # Model files (optional — if you don’t want to push trained pipelines)
 *.joblib
 *.pkl
+*.pt
+*.pth
