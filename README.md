@@ -40,6 +40,7 @@ AI-Mastery/
   - Streamlit app for interactive predictions 
 
 - **Week 2 Project — Model Playground — California Housing** 
+  
   An interactive **Streamlit app** to compare machine learning models on the California Housing dataset.  
   - Train & evaluate models with adjustable hyperparameters.
   - See test metrics: **R²** and **RMSE**.
@@ -49,6 +50,7 @@ AI-Mastery/
   - Visualize **learning curves** to diagnose underfitting/overfitting.
 
 - **Week 3 Project — SMS Spam Classifier** 
+  
   An interactive **Streamlit app** that classifies SMS messages as **Spam** or **Ham** (not spam).  
   - Built with **Naive Bayes + TF-IDF**
   - Enter your own SMS text or choose a sample message.
@@ -57,6 +59,7 @@ AI-Mastery/
   - Shows **top spammy words** learned by the Naive Bayes model.
 
 - **Week 4 Project — Movie Recommender 🎬** 
+  
   A small, ship‑able item/user‑based collaborative filtering app on MovieLens 100k.
   - Item‑based or user‑based cosine similarity.
   - Filter by minimum number of ratings per movie.
@@ -65,8 +68,18 @@ AI-Mastery/
   - Cached data loading and similarity computation for speed.
 
 
-- **Week 5 Project — Model Playground — California Housing** 
+- **Week 5 Project — Digit Recognizer** 
+  
   This is the mini-project app for drawing a digit and getting a prediction using a simple PyTorch MLP.
+  - Drawable canvas (280×280) with adjustable stroke width and color.
+  - Preprocessing to 28×28 grayscale (MNIST format) with inversion and normalization.
+  - PyTorch MLP (256→128) with ReLU, trained with Adam.
+  - Top-3 probability display and visualization of the processed input.
+
+- **Week 6 Project — Fashion Recognizer** 
+  
+  This is the mini-project app where you can train a Fashion-MNIST classifier, watch live metrics,
+  browse predictions, and inspect a confusion matrix.
   - Drawable canvas (280×280) with adjustable stroke width and color.
   - Preprocessing to 28×28 grayscale (MNIST format) with inversion and normalization.
   - PyTorch MLP (256→128) with ReLU, trained with Adam.
