@@ -80,10 +80,10 @@ AI-Mastery/
   
   This is the mini-project app where you can train a Fashion-MNIST classifier, watch live metrics,
   browse predictions, and inspect a confusion matrix.
-  - Drawable canvas (280×280) with adjustable stroke width and color.
-  - Preprocessing to 28×28 grayscale (MNIST format) with inversion and normalization.
-  - PyTorch MLP (256→128) with ReLU, trained with Adam.
-  - Top-3 probability display and visualization of the processed input.
+  - Sidebar controls: optimizer (Adam / SGD+Momentum), learning rate, weight decay, dropout, hidden sizes, epochs, batch size.
+  - Live training with progress and plots (loss + validation accuracy).
+  - Prediction browser: grid of random test images with true/pred labels and **top-3 probabilities**; toggle to show only misclassifications.
+  - Confusion matrix tab for full test set.
 
 
 ---
