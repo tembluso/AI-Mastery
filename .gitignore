@@ -35,3 +35,7 @@ Thumbs.db
 *.pkl
 *.pt
 *.pth
+
+#Ignore data
+
+data/

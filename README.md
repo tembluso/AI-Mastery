@@ -85,6 +85,16 @@ AI-Mastery/
   - Prediction browser: grid of random test images with true/pred labels and **top-3 probabilities**; toggle to show only misclassifications.
   - Confusion matrix tab for full test set.
 
+- **Week 7 Project — CIFAR‑10 Mini‑App** 
+  
+  Train a baseline CNN on CIFAR‑10, save the best checkpoint, and ship a small demo app (Streamlit/CLI) to classify uploaded images.
+  - Loads a 3‑block CNN trained on CIFAR‑10 (32×32 color images, 10 classes).
+  - Preprocessing: resize + normalize to match training pipeline.
+  - **Top‑K predictions** with probabilities (adjustable in sidebar).
+  - Upload support for PNG/JPG/JPEG/WEBP formats.
+  - Probability bar chart for visual feedback.
+  - CLI script for quick classification outside Streamlit.
+
 
 ---
 
