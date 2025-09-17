@@ -13,6 +13,7 @@ __pycache__/
 venv/
 .env/
 .venv/
+torchtext-fix-venv/
 
 # Jupyter Notebook checkpoints
 .ipynb_checkpoints/
