@@ -1,0 +1,4 @@
+streamlit>=1.36
+torch>=2.2
+matplotlib
+numpy>=1.26

@@ -1,0 +1,169 @@
+Step 1: Input
+
+If you type "I love pizza" → tokens = ["I", "love", "pizza"].
+
+If you type "1, 4, 2, 7, 7, 3" → tokens = [1.0, 4.0, 2.0, 7.0, 7.0, 3.0].
+
+So:
+
+Words: split by whitespace.
+
+Numbers: split by commas/spaces, turned into floats.
+
+Step 2: Embedding into vectors
+
+Words → each word gets a deterministic random vector (hash of the string → vector of length d_model).
+
+Numbers → each number is projected into a vector of length d_model using a fixed random weight matrix.
+
+This gives you an embedding matrix X of shape (sequence_length, d_model).
+
+Example:
+
+"I love pizza" → X = [
+  vector for "I",
+  vector for "love",
+  vector for "pizza"
+]
+
+Step 3: Create Q, K, V
+
+Three matrices (W_q, W_k, W_v) are random projection weights.
+
+Compute:
+
+Q = X @ W_q
+K = X @ W_k
+V = X @ W_v
+
+
+So each token produces its own Q, K, V vector.
+
+Intuition:
+
+Query (Q): "what this token is asking about"
+
+Key (K): "what this token offers as information"
+
+Value (V): "the actual content carried forward"
+
+Step 4: Scaled Dot-Product Attention
+
+For each token’s query vector 
+𝑄
+𝑖
+Q
+i
+	​
+
+:
+
+Compare it with every key vector 
+𝐾
+𝑗
+K
+j
+	​
+
+ (dot product).
+
+Softmax → attention weights.
+
+Use weights to make a weighted sum of all values 
+𝑉
+𝑗
+V
+j
+	​
+
+.
+
+Result: each token’s output vector = "mixture" of all tokens’ values, weighted by similarity.
+
+Step 5: Multi-Head Attention
+
+Repeat attention several times (heads).
+
+Each head sees the tokens in a slightly different projection space.
+
+Outputs are concatenated and projected back → final output vectors.
+
+Step 6: Visualization
+
+The heatmaps you see are attention weights:
+
+Rows = queries (each token asking).
+
+Columns = keys (each token being looked at).
+
+Colors = how much attention the query pays to that key.
+
+So for "I love pizza":
+
+Row 0 = how "I" attends to "I/love/pizza".
+
+Row 1 = how "love" attends.
+
+Row 2 = how "pizza" attends.
+
+For numbers [1, 4, 2, 7, 7, 3]:
+
+Same thing, but tokens are numbers instead of words.
+
+Each number gets projected to a vector, then treated like a word.
+
+✅ So the answer to your confusion:
+
+Yes, both words and numbers are first mapped into embeddings (vectors).
+
+Yes, each token produces its own Q, K, V.
+
+Query = just one of those projected vectors, not something external — every token makes its own query.
+
+Numbers are handled the same as words; they’re just mapped differently.
+
+General rule: if you pass a sequence of length L, then attention weights form an L × L matrix (per head).
+
+Why?
+
+Each of the L tokens produces a query → that’s the rows.
+
+Each of the L tokens also produces a key → that’s the columns.
+
+So for each query, you see how much it attends to every key.
+
+Example 1 — "I love pizza" (3 tokens)
+
+Queries: 3 (I, love, pizza).
+
+Keys: 3 (I, love, pizza).
+
+Heatmap size = 3 × 3.
+
+Row 0 = "I" looking at I/love/pizza.
+
+Row 1 = "love" looking at I/love/pizza.
+
+Row 2 = "pizza" looking at I/love/pizza.
+
+Example 2 — [1, 4, 2, 7, 7, 3] (6 tokens)
+
+Queries: 6 (one for each number).
+
+Keys: 6 (same numbers).
+
+Heatmap size = 6 × 6.
+
+Row 0 = "1" attends to [1,4,2,7,7,3].
+
+Row 1 = "4" attends to [1,4,2,7,7,3].
+
+… etc.
+
+💡 So:
+
+Small sentence → small square matrix.
+
+Longer input (more words or numbers) → bigger square matrix.
+
+Always rows = queries, columns = keys.
