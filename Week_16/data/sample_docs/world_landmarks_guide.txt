@@ -1,0 +1,161 @@
+World Capitals & Landmarks — A Practical Factbook for RAG Testing
+=================================================================
+
+Overview
+--------
+This file is designed for retrieval-augmented generation (RAG) demos. It contains concise,
+fact-dense sections about countries, cities, landmarks, museums, rivers, mountains, food,
+and brief historical notes. Each section aims to be specific enough that a semantic
+retriever can surface the right chunk for a question. Use it to test chunking, top-k
+retrieval, and reranking.
+
+
+France
+------
+Capital: Paris. Currency: Euro. Language: French. Time zone: CET/CEST.
+Rivers: Seine (flows through Paris), Loire, Garonne, Rhône.
+Mountains: Mont Blanc (the highest in Western Europe, in the Alps near the Italian border).
+Landmarks: Eiffel Tower (Paris, Champ de Mars), Arc de Triomphe (Place Charles de Gaulle),
+Notre-Dame Cathedral (Île de la Cité), Palace of Versailles (Île-de-France).
+Museums: The Louvre (world’s most visited), Musée d’Orsay (impressionist and post-impressionist),
+Centre Pompidou (modern art). Cuisine highlights: baguette, croissant, crêpes, coq au vin,
+ratatouille, crème brûlée. Events: Bastille Day (14 July) with a parade on the Champs-Élysées.
+Notes: The Paris Métro is one of the world’s oldest rapid transit systems (opened 1900).
+
+Germany
+-------
+Capital: Berlin. Currency: Euro. Language: German. Time zone: CET/CEST.
+Rivers: Rhine (western border), Elbe (Hamburg & Dresden), Danube (Bavaria), Spree (Berlin).
+Landmarks: Brandenburg Gate (Pariser Platz), Reichstag dome, Berlin TV Tower (Fernsehturm).
+Museums: Museum Island includes the Pergamon Museum, Neues Museum, Altes Museum,
+Bode Museum, Alte Nationalgalerie. Automotive hubs: Munich (BMW), Stuttgart (Mercedes-Benz & Porsche).
+Events: Oktoberfest in Munich (late Sept–early Oct). Historic note: the Berlin Wall fell in 1989,
+leading to German reunification in 1990.
+
+Italy
+-----
+Capital: Rome. Currency: Euro. Language: Italian.
+Landmarks: Colosseum (ancient amphitheater east of the Roman Forum), Pantheon (oculus),
+Trevi Fountain, Vatican City (St. Peter’s Basilica, Sistine Chapel with Michelangelo frescoes).
+Cities: Florence (Uffizi Gallery, Duomo), Venice (St. Mark’s Basilica, Grand Canal), Milan (Duomo, La Scala).
+Food: pizza (Naples), pasta varieties (carbonara, bolognese), gelato, espresso. Rivers: Po (longest).
+Mountains: Alps in the north; Apennines run the length of the peninsula.
+Notes: The Leaning Tower of Pisa is a freestanding bell tower (campanile) with a tilt due to soft ground.
+
+Spain
+-----
+Capital: Madrid. Currency: Euro. Language: Spanish (Castilian); co-official regional languages include Catalan,
+Galician, and Basque. Museums: Prado Museum (Velázquez, Goya), Reina Sofía (Guernica by Picasso),
+Thyssen-Bornemisza. Barcelona: Sagrada Família (Gaudí, still under construction), Park Güell, Casa Batlló.
+Seville: Alcázar, Giralda, flamenco traditions. Valencia: City of Arts and Sciences by Santiago Calatrava.
+Food: paella (Valencia), jamón ibérico, tortilla de patatas, churros with chocolate. Events: Running of the Bulls
+in Pamplona during San Fermín (July). Football clubs: Real Madrid, FC Barcelona, Atlético de Madrid.
+
+United Kingdom
+--------------
+Capital: London. Currency: Pound sterling. Language: English.
+Rivers: Thames (London), Severn (longest in Great Britain). Landmarks: Big Ben (Great Bell of the
+clock at the Palace of Westminster), Tower Bridge, Buckingham Palace, London Eye.
+Museums: British Museum (Rosetta Stone), National Gallery (Trafalgar Square), Tate Modern (Bankside).
+Universities: Oxford (oldest in English-speaking world), Cambridge, Imperial College London.
+Regions: Scotland (Edinburgh Castle), Wales (Snowdonia), Northern Ireland (Giant’s Causeway).
+Cultural notes: Afternoon tea, pub culture, Premier League football.
+
+Portugal
+--------
+Capital: Lisbon. Currency: Euro. Language: Portuguese.
+Landmarks: Belém Tower (UNESCO), Jerónimos Monastery, Praça do Comércio, 25 de Abril Bridge.
+Porto: Dom Luís I Bridge, Ribeira district, port wine cellars in Vila Nova de Gaia.
+Rivers: Tagus (Tejo) flows through Lisbon; Douro flows through Porto and the wine region.
+Food: bacalhau (salt cod), pastéis de nata (custard tarts), caldo verde soup.
+Music: Fado (especially in Lisbon and Coimbra).
+
+Netherlands
+-----------
+Capital: Amsterdam. Currency: Euro. Language: Dutch.
+Landmarks: Rijksmuseum (Rembrandt’s Night Watch), Van Gogh Museum, Anne Frank House, canals and narrow houses.
+Other cities: Rotterdam (modern architecture, Erasmus Bridge), The Hague (International Court of Justice, Peace Palace).
+Geography: Much of the country is below sea level; protected by dikes and polders. Flowers: tulips in Keukenhof gardens.
+Transport: Bicycles are a dominant mode in cities; extensive cycling infrastructure.
+
+Greece
+------
+Capital: Athens. Currency: Euro. Language: Greek.
+Landmarks: Acropolis (Parthenon), Temple of Olympian Zeus, Ancient Agora.
+Islands: Santorini (caldera, white-washed villages), Crete (Knossos), Mykonos (windmills, nightlife), Rhodes (medieval old town).
+Food: moussaka, souvlaki, Greek salad (horiatiki), feta cheese, baklava. Seas: Aegean, Ionian, Mediterranean.
+History: Birthplace of democracy and Western philosophy; major figures include Socrates, Plato, Aristotle.
+
+Turkey
+------
+Capital: Ankara; largest city: Istanbul. Currency: Turkish lira. Language: Turkish.
+Landmarks: Hagia Sophia (Byzantine basilica turned mosque/museum/mosque), Blue Mosque (Sultan Ahmed), Topkapı Palace.
+Geography: Bosphorus Strait separating Europe and Asia; Cappadocia (tufa rock formations, hot air balloons).
+Food: döner, kebab varieties, meze, baklava, Turkish tea and coffee. Ancient sites: Ephesus, Göbekli Tepe.
+Notes: Grand Bazaar is among the world’s largest covered markets.
+
+United States
+-------------
+Capital: Washington, D.C. Currency: U.S. dollar. Language: English (de facto).
+Iconic cities: New York (Statue of Liberty, Empire State Building, Central Park, Broadway), Los Angeles (Hollywood, Griffith Observatory),
+San Francisco (Golden Gate Bridge, Alcatraz), Chicago (Willis Tower, Millennium Park), Washington, D.C. (National Mall, Smithsonian museums).
+Parks: Yellowstone (geysers), Grand Canyon, Yosemite, Zion.
+Universities: Harvard, MIT, Stanford, Berkeley. Tech hubs: Silicon Valley, Seattle, Austin.
+Food: regional diversity—barbecue (Texas, Kansas City), bagels (NYC), deep-dish pizza (Chicago), Cajun/Creole (New Orleans).
+
+Japan
+-----
+Capital: Tokyo. Currency: Yen. Language: Japanese.
+Landmarks: Tokyo Skytree, Shibuya Crossing, Meiji Shrine; Kyoto’s Kinkaku-ji (Golden Pavilion) and Fushimi Inari Taisha (torii gates);
+Osaka Castle; Hiroshima Peace Memorial Park. Nature: Mount Fuji (iconic stratovolcano).
+Food: sushi, ramen, tempura, okonomiyaki, wagyu beef; tea ceremony.
+Transport: Shinkansen (bullet trains) with punctual high-speed service. Culture: anime, manga, festivals (matsuri), hanami (cherry blossom viewing).
+
+China
+-----
+Capital: Beijing. Currency: Renminbi (yuan). Language: Mandarin Chinese.
+Landmarks: Great Wall (sections near Beijing like Badaling and Mutianyu), Forbidden City (Palace Museum),
+Temple of Heaven, Tiananmen Square. Shanghai: The Bund, Oriental Pearl Tower, Pudong skyline.
+Xi’an: Terracotta Army of Qin Shi Huang. Rivers: Yangtze (longest in Asia), Yellow River (Huang He).
+Food: diverse regional cuisines—Sichuan (spicy), Cantonese (dim sum), Shandong (seafood), Jiangsu (sweet-savory).
+Inventions: papermaking, printing, compass, gunpowder.
+
+India
+-----
+Capital: New Delhi. Currency: Indian rupee. Languages: Hindi & English (official at Union level) + many regional languages.
+Landmarks: Taj Mahal (Agra), Qutub Minar and Red Fort (Delhi), Gateway of India (Mumbai), Hawa Mahal (Jaipur), Varanasi ghats on the Ganges.
+Geography: Himalayas (highest range; Kanchenjunga is the highest peak in India), Thar Desert (Rajasthan).
+Food: masala dosa, biryani, butter chicken, chaat, jalebi; diverse vegetarian traditions.
+Festivals: Diwali (festival of lights), Holi (festival of colors), Durga Puja (Kolkata), Ganesh Chaturthi (Mumbai).
+
+Egypt
+-----
+Capital: Cairo. Currency: Egyptian pound. Language: Arabic.
+Landmarks: Pyramids of Giza and the Great Sphinx (on the Giza Plateau), Egyptian Museum (Tahrir Square),
+Karnak Temple and Valley of the Kings (Luxor). River: Nile (flows north into the Mediterranean).
+History: Ancient civilization known for hieroglyphics, pharaohs (e.g., Ramses II, Tutankhamun). Modern attraction: Nile cruises.
+Cuisine: koshari (lentils, rice, pasta), ful medames (fava beans), taameya (Egyptian falafel).
+
+Mexico
+------
+Capital: Mexico City. Currency: Mexican peso. Language: Spanish.
+Landmarks: Teotihuacan (Pyramid of the Sun and Moon), Chichén Itzá (El Castillo), Palenque (Mayan ruins).
+Museums: National Museum of Anthropology (world-class Mesoamerican collections). Food: tacos al pastor, mole, tamales, pozole.
+Geography: Yucatán cenotes, Copper Canyon, Baja California peninsula. Art: Frida Kahlo, Diego Rivera.
+Events: Day of the Dead (Día de Muertos) late Oct–Nov 2 with ofrendas and marigolds.
+
+Brazil
+------
+Capital: Brasília. Currency: Brazilian real. Language: Portuguese.
+Cities: Rio de Janeiro (Christ the Redeemer on Corcovado, Sugarloaf Mountain, Copacabana), São Paulo (economic center),
+Salvador (Afro-Brazilian culture, Pelourinho). Nature: Amazon Rainforest and River (largest by discharge), Iguaçu Falls (on the border with Argentina).
+Food: feijoada (black bean stew), pão de queijo (cheese bread), açaí bowls. Events: Carnival (Rio’s Sambadrome parades).
+
+Rivers & Mountains (Cross-Region Quick Facts)
+---------------------------------------------
+- The Danube flows through or borders Germany, Austria, Slovakia, Hungary, Croatia, Serbia, Romania, Bulgaria, Moldova, and Ukraine; it empties into the Black Sea.
+- The Rhine begins in the Swiss Alps, passes through Lake Constance, forms part of the Swiss–German and Franco–German border, and flows through Cologne to the North Sea.
+- The Alps span France, Switzerland, Italy, Liechtenstein, Austria, Germany, and Slovenia; Mont Blanc (France/Italy) and the Matterhorn (Switzerland/Italy) are iconic.
+- The Andes run along the western edge of South America, with Aconcagua (Argentina) as the highest outside Asia.
+- The Himalayas include Mount Everest (Nepal/China border) and K2 in the Karakoram.
+

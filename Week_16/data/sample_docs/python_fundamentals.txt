@@ -1,0 +1,5 @@
+Python is a high-level programming language known for readability and flexibility. 
+It supports multiple paradigms including procedural, object-oriented, and functional programming. 
+Important data structures include lists, tuples, dictionaries, and sets. 
+Libraries like NumPy and pandas are used for data science and machine learning. 
+Functions are defined with the keyword 'def' followed by the function name.

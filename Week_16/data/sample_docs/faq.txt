@@ -1,0 +1,5 @@
+Q: What is chunk overlap?
+A: The number of characters repeated between adjacent chunks to preserve context continuity.
+
+Q: Why are citations useful?
+A: They show the supporting sources and help reduce hallucinations.

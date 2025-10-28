@@ -1,0 +1,5 @@
+Artificial Intelligence (AI) refers to the simulation of human intelligence in computers. 
+It includes fields such as machine learning, deep learning, and natural language processing. 
+Machine learning allows computers to learn from data and make predictions. 
+Deep learning uses neural networks with many layers. 
+Natural language processing helps computers understand and generate human language.
