@@ -1,7 +1,0 @@
-Python is a high-level programming language known for its readability and flexibility. 
-It is widely used in data science, machine learning, and web development.
-
-Important data structures in Python include lists, tuples, dictionaries, and sets. 
-NumPy and pandas are libraries used for numerical computation and data manipulation.
-
-Functions in Python are defined using the 'def' keyword.
