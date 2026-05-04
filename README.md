@@ -113,4 +113,4 @@ AI-Mastery/
 
 ## ⚠️ Disclaimer
 This repo is a **learning journal**.  
-Code may be messy, overly commented, or experimental. That’s intentional — it reflects real learning progress.  
+Code may be messy, overly commented, or experimental. That’s intentional as it reflects real learning progress.  
