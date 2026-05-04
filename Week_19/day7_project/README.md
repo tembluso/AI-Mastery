@@ -73,6 +73,3 @@ efficiency_showdown_app/
 - How to wrap experiments into a professional Streamlit dashboard.
 
 ---
-
-**Author:** Federico Sánchez  
-**Project:** AI Mastery · Week 19 · Day 7 — Scaling & Efficiency in AI
