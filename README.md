@@ -95,6 +95,125 @@ AI-Mastery/
   - Probability bar chart for visual feedback.
   - CLI script for quick classification outside Streamlit.
 
+- **Week 8 Project — Transfer Learning Demo** 
+  
+  Fine-tune a pretrained ResNet18 on a small image classification dataset and ship a demo app with explainability.
+  - Loads a fine-tuned **ResNet18** checkpoint.
+  - Upload support for `.png`, `.jpg`, `.jpeg`, and `.webp` images.
+  - **Top-3 predictions** with probabilities.
+  - **Grad-CAM heatmap** overlay to show where the model is focusing.
+  - Example failure-case analysis, such as background-driven misclassification.
+
+- **Week 9 Project — IMDB Sentiment Baseline** 
+  
+  Train a baseline LSTM text classifier on IMDB reviews and ship it with both CLI and Streamlit inference.
+  - Loads and preprocesses the IMDB dataset.
+  - Trains a 1-layer **LSTM** sentiment classifier.
+  - Saves model weights, vocabulary, and config in a single `bundle.pt`.
+  - CLI script for quick sentiment prediction.
+  - Streamlit app with single-review and batch-analysis tabs.
+
+- **Week 10 Project — IMDB Sentiment App** 
+  
+  Upgrade the IMDB sentiment model using a BiLSTM + Attention architecture and token-level interpretability.
+  - Trains a **BiLSTM + Attention** model on an IMDB subset.
+  - Predicts positive/negative sentiment with probabilities.
+  - Highlights influential words using **Integrated Gradients**.
+  - CLI script for batch predictions.
+  - Streamlit app for interactive review analysis.
+
+- **Week 11 Project — Attention Visualizer** 
+  
+  Build a didactic Streamlit tool to visualize how self-attention works across different heads and masks.
+  - Input support for numbers or words.
+  - Adjustable `d_model`, number of heads, and random seed.
+  - Mask options: none, padding, and causal.
+  - Per-head and averaged attention heatmaps.
+  - Matrix inspection for Q, K, V, and output representations.
+
+- **Week 12 Project — Mini Transformer Demo** 
+  
+  Train a small encoder-decoder Transformer on a reverse-sequence task and visualize decoder cross-attention.
+  - Train or load a Transformer checkpoint inside the app.
+  - Evaluate test accuracy and BLEU-1 score.
+  - Custom sequence input with predicted vs reference output.
+  - Cross-attention heatmaps showing the learned reverse mapping.
+  - Default architecture: `d_model=64`, 2 layers, 4 heads.
+
+- **Week 13 Project — Mini GPT vs BERT Playground** 
+  
+  Build a small playground comparing GPT-style text continuation with BERT-style masked word prediction.
+  - Uses pretrained **GPT-2** for text continuation.
+  - Uses pretrained **BERT** for `[MASK]` token prediction.
+  - Streamlit app with adjustable sampling controls.
+  - CLI script for quick GPT/BERT tests.
+  - No training required; focuses on understanding model behavior.
+
+- **Week 14 Project — Fine-Tuned LLM Demo** 
+  
+  Build a CPU-friendly app for fine-tuned sentiment classification and optional review-style text generation.
+  - Fine-tunes **DistilBERT** for IMDB sentiment classification.
+  - Optional **GPT-2** fine-tuning for review-style generation.
+  - Simple PyTorch training loops without relying on `Trainer`.
+  - Streamlit app for inference and tiny CPU bootstrap training.
+  - CLI scripts for sentiment prediction and text generation.
+
+- **Week 15 Project — Mini-RAG Notebook** 
+  
+  Build a small Retrieval-Augmented Generation pipeline for answering questions from uploaded documents.
+  - Ingests PDFs, TXT, and Markdown files.
+  - Chunks documents with configurable overlap.
+  - Uses SentenceTransformers embeddings and **FAISS** retrieval.
+  - Optional CrossEncoder reranking.
+  - Streamlit UI with grounded answers and visible source passages.
+ 
+- **Week 16 Project — Custom Q&A Bot** 
+  
+  Build a fully working Q&A app using TF-IDF retrieval and extractive answering, designed to run quickly on CPU with minimal dependencies.
+  - Ingests documents from a local sample document folder.
+  - Uses **TF-IDF retrieval** to find relevant text chunks.
+  - Generates answers by stitching together the top retrieved chunks.
+  - Streamlit frontend for asking questions interactively.
+  - No external LLM or API key required.
+
+- **Week 17 Project — GAN & VAE Art Generator** 
+  
+  Build a lightweight Streamlit app to train and generate MNIST digits using GANs and VAEs.
+  - Generate image grids with either **GAN** or **VAE** models.
+  - Latent interpolation between generated samples.
+  - VAE reconstruction of real digit images.
+  - Mini-training and full-training options from the UI.
+  - Diversity and sharpness proxy metrics with downloadable generated grids.
+ 
+- **Week 18 Project — LunarLander A2C Mini-App** 
+  
+  Train a reinforcement learning agent on Gymnasium’s LunarLander environment and replay captured episodes in a Streamlit app.
+  - Implements an **Actor-Critic (A2C)** agent in PyTorch.
+  - Sidebar controls for episodes, learning rate, hidden size, discount factor, critic coefficient, entropy term, and seed.
+  - Live learning curve with episode rewards and moving average.
+  - Best-of-N evaluation to capture the strongest landing attempt.
+  - Frame slider to replay the episode timeline, including touchdown or crash.
+  - Runs with Gymnasium, PyTorch, Matplotlib, Pygame, and Streamlit.
+
+ - **Week 19 Project — Efficiency Showdown** 
+  
+  Compare three versions of the same MNIST neural network to explore CPU deployment efficiency techniques.
+  - Benchmarks a baseline teacher model, an **int8 quantized** model, and a smaller **distilled student** model.
+  - Compares accuracy, model size, and inference latency.
+  - Streamlit dashboard with metrics and bar charts.
+  - Upload your own digit image or select a random test sample.
+  - **Top-3 predictions** shown for each model.
+  - Uses PyTorch, dynamic quantization, knowledge distillation, and TorchScript export.
+
+- **Week 20 Project — RAG Tweet Assistant** 
+  
+  Build a Streamlit app that turns personal notes into grounded social posts using a small RAG pipeline.
+  - Upload or pre-index notes from PDF, TXT, and Markdown files.
+  - Uses **OpenAI embeddings** with a local **FAISS** vector store.
+  - Retrieves top-k chunks and generates post variants with OpenAI Chat.
+  - UI controls for platform, number of variants, character limit, hashtags, and emojis.
+  - Includes an evaluation script for testing the retrieval/generation pipeline.
+  - Reads API keys from `.env` or environment variables to avoid committing secrets.
 
 ---
 
@@ -102,12 +221,6 @@ AI-Mastery/
 - Show my **learning journey** transparently (not just polished code).  
 - Build a foundation in AI/ML step by step.  
 - Keep a record of every exercise, experiment, and project.  
-
----
-
-## 🚀 Future
-- Weeks 2–20 will include more advanced topics (ML models, deep learning, NLP, etc.).  
-- Final weeks will focus on **larger projects** applying everything together.  
 
 ---
 
