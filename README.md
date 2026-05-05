@@ -195,12 +195,12 @@ AI-Mastery/
   - Frame slider to replay the episode timeline, including touchdown or crash.
   - Runs with Gymnasium, PyTorch, Matplotlib, Pygame, and Streamlit.
 
- - **Week 19 Project — Efficiency Showdown** 
-  
-  Compare three versions of the same MNIST neural network to explore CPU deployment efficiency techniques.
-  - Benchmarks a baseline teacher model, an **int8 quantized** model, and a smaller **distilled student** model.
+ - **Week 19 Project — Efficiency Showdown**
+
+  Compare three versions of the same MINST neural network to explore CPU deployment efficiency techniques.
+  - Benchmarks a baseline teacher model an **int8 quantized** model, and a smaller **distilled student** model.
   - Compares accuracy, model size, and inference latency.
-  - Streamlit dashboard with metrics and bar charts.
+  - streamlit dashboard with metrics and bar charts.
   - Upload your own digit image or select a random test sample.
   - **Top-3 predictions** shown for each model.
   - Uses PyTorch, dynamic quantization, knowledge distillation, and TorchScript export.
